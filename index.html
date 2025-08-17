@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voleybol Turnuva Tablosu</title>
+
+    <style>
+        .unsal {
+            background-image: url(./assets/arkaplan.jpg);
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 unsal"></div>
+    <main class="min-h-screen flex flex-col items-center pt-8 px-4">
+        <div class="relative w-full max-w-3xl overflow-x-auto">
+            <!-- Cam kutu -->
+            <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative">
+                <!-- Grup ismi -->
+                <div class="absolute top-0 left-4 px-4 py-6 text-white font-bold">
+                    A GRUBU
+                </div>
+
+                <!-- Tablo -->
+                <div class="w-full md:text-lg text-[0.8rem] sm:text-base text-white mt-2 relative overflow-x-auto">
+                    <table class="min-w-full table-fixed border-collapse">
+                        <!-- Başlık satırı -->
+                        <thead>
+                            <tr class="border-b border-white/40">
+                                <th class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"></th>
+                                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px]">O</th>
+                                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px]">G</th>
+                                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px]">M</th>
+                                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px]">Set</th>
+                                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px]">Sayı</th>
+                                <th class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px]">Puan</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Takım satırları -->
+                        <tbody>
+                            <tr
+                                class="my-1 bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                                <td
+                                    class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                                    LEGENDARY JACOP</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">0</td>
+                            </tr>
+
+                            <tr
+                                class="my-1 bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                                <td
+                                    class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                                    ASI SAVASCILARI</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">0</td>
+                            </tr>
+
+                            <tr class="my-1">
+                                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">KARDESLER
+                                </td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold">0</td>
+                            </tr>
+
+                            <tr class="my-1">
+                                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">KARA
+                                    KAPLANLAR</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">0-0</td>
+                                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Alt açıklama -->
+                <div class="mt-4 text-xs text-white/70 text-center">
+                    2-0: Kazanan 3, Kaybeden 0 puan &nbsp; | &nbsp; 2-1: Kazanan 2, Kaybeden 1 puan
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
