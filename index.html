@@ -22,7 +22,7 @@
           class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative"
         >
           <!-- Grup ismi -->
-          <div class="absolute top-0 left-4 px-4 py-6 text-white font-bold">
+          <div class="absolute top-0 px-4 py-6 text-white font-bold text-2xl">
             A GRUBU
           </div>
 
@@ -38,32 +38,32 @@
                     class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"
                   ></th>
                   <th
-                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px]"
+                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl"
                   >
                     O
                   </th>
                   <th
-                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px]"
+                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl"
                   >
                     G
                   </th>
                   <th
-                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px]"
+                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl"
                   >
                     M
                   </th>
                   <th
-                    class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px]"
+                    class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl"
                   >
                     Set
                   </th>
                   <th
-                    class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px]"
+                    class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl"
                   >
                     Sayı
                   </th>
                   <th
-                    class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px]"
+                    class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px] text-xl"
                   >
                     Puan
                   </th>
@@ -78,7 +78,7 @@
                 </tr>
 
                 <tr
-                  class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md"
+                  class="bg-gradient-to-r from-[#1724A1] from-0% via-[#1724A1]/40 via-40% to-[#1724A1] to-100% rounded-md"
                 >
                   <td
                     class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md"
@@ -203,12 +203,30 @@
               <span>Saat 20:00</span>
             </div>
             <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-2xl border-r border-white/40">0</div>
-              <div class="text-center">
-                <p>A1 - A2</p>
+              <div class="px-4 py-2 text-3xl border-r border-white/40">2</div>
+              <div class="text-center flex-1 px-2 overflow-hidden flex-shrink">
+                <p id="team-name" class="whitespace-nowrap pr-0">
+                  LEGENDARY JACOP - KARA KAPLANLAR
+                </P>
               </div>
-              <div class="px-4 py-2 text-2xl border-l border-white/40">0</div>
+              <div class="px-4 py-2 text-3xl border-l border-white/40">1</div>
             </div>
+            <script>
+                function fitText(id) {
+                  const el = document.getElementById(id);
+                  const parentWidth = el.parentElement.offsetWidth;
+                  let fontSize = 24; // Başlangıç boyutu px
+                  el.style.fontSize = fontSize + "px";
+
+                  while (el.scrollWidth > parentWidth - 4 && fontSize > 8) {
+                    fontSize--;
+                    el.style.fontSize = fontSize + "px";
+                  }
+                }
+
+                fitText("team-name");
+                window.addEventListener("resize", () => fitText("team-name"));
+            </script>
             <div class="w-full text-center font-thin flex justify-center gap-4">
               <span>1.Set:0-0</span>
               <span>2.Set:0-0</span>
