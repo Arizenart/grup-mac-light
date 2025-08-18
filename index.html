@@ -1,355 +1,1097 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voleybol Turnuva Tablosu</title>
 
-    <style>
-      .unsal {
-        background-image: url(./assets/arkaplan.jpg);
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voleybol Turnuva Tablosu</title>
 
-  <body class="bg-gray-900 min-h-screen unsal bg-cover bg-center bg-no-repeat">
-    <div class="absolute min-h-screen inset-0 z-0"></div>
-    <main class="min-h-screen flex flex-col items-center pt-8 px-4">
-      <div class="relative w-full max-w-3xl overflow-x-auto">
-        <!-- Cam kutu -->
-        <div
-          class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative"
-        >
-          <!-- Grup ismi -->
-          <div class="absolute top-0 px-4 py-6 text-white font-bold text-2xl">
-            A GRUBU
-          </div>
+  <style>
+    .unsal {
+      background-image: url(./assets/arkaplan.jpg);
+      background-attachment: fixed !important;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-          <!-- Tablo -->
-          <div
-            class="w-full md:text-lg text-[0.8rem] sm:text-base text-white mt-2 relative overflow-x-auto"
-          >
-            <table class="min-w-full table-fixed border-collapse">
-              <!-- Başlık satırı -->
-              <thead>
-                <tr class="border-b border-white/40">
-                  <th
-                    class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"
-                  ></th>
-                  <th
-                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl"
-                  >
-                    O
-                  </th>
-                  <th
-                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl"
-                  >
-                    G
-                  </th>
-                  <th
-                    class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl"
-                  >
-                    M
-                  </th>
-                  <th
-                    class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl"
-                  >
-                    Set
-                  </th>
-                  <th
-                    class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl"
-                  >
-                    Sayı
-                  </th>
-                  <th
-                    class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px] text-xl"
-                  >
-                    Puan
-                  </th>
-                </tr>
-              </thead>
-
-              <!-- Takım satırları -->
-              <tbody>
-                <!-- Boşluk satırı -->
-                <tr>
-                  <td colspan="7" class="py-1"></td>
-                </tr>
-
-                <tr
-                  class="bg-gradient-to-r from-[#1724A1] from-0% via-[#1724A1]/40 via-40% to-[#1724A1] to-100% rounded-md"
-                >
-                  <td
-                    class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md"
-                  >
-                    LEGENDARY JACOP
-                  </td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td
-                    class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md"
-                  >
-                    0
-                  </td>
-                </tr>
-
-                <!-- Boşluk satırı -->
-                <tr>
-                  <td colspan="7" class="py-1"></td>
-                </tr>
-
-                <tr
-                  class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md"
-                >
-                  <td
-                    class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md"
-                  >
-                    ASI SAVASCILARI
-                  </td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td
-                    class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md"
-                  >
-                    0
-                  </td>
-                </tr>
-
-                <!-- Boşluk satırı -->
-                <tr>
-                  <td colspan="7" class="py-1"></td>
-                </tr>
-
-                <tr>
-                  <td
-                    class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]"
-                  >
-                    KARDESLER
-                  </td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td
-                    class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold"
-                  >
-                    0
-                  </td>
-                </tr>
-
-                <!-- Boşluk satırı -->
-                <tr>
-                  <td colspan="7" class="py-1"></td>
-                </tr>
-
-                <tr>
-                  <td
-                    class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]"
-                  >
-                    KARA KAPLANLAR
-                  </td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
-                  <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
-                    0-0
-                  </td>
-                  <td
-                    class="text-center px-2 py-1 w-[11%] min-w-[50px]"
-                  >
-                    0-0
-                  </td>
-                  <td class="text-center px-2 py-1 w-[8%] min-w-[40px] font-bold">0</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Alt açıklama -->
-          <div class="mt-4 text-xs text-white/70 text-center">
-            2-0: Kazanan 3, Kaybeden 0 puan &nbsp; | &nbsp; 2-1: Kazanan 2,
-            Kaybeden 1 puan
-          </div>
+<body class="bg-gray-900 min-h-screen unsal bg-cover bg-center bg-no-repeat">
+  <div class="absolute min-h-screen inset-0 z-0"></div>
+  <main class="min-h-screen flex flex-col items-center pt-8 px-4">
+    <div class="relative w-full max-w-3xl overflow-x-auto">
+      <!-- Cam kutu -->
+      <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative">
+        <!-- Grup ismi -->
+        <div class="absolute top-0 px-4 py-6 text-white font-bold text-2xl">
+          A GRUBU
         </div>
 
-        <div
-          class="w-full grid lg:grid-cols-2 grid-cols-1 my-4 gap-x-11 gap-y-4"
-        >
-          <div
-            class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2"
-          >
-            <div class="w-full text-center text-white font-thin flex justify-center gap-4">
-              <span>27 Temmuz Pazar</span> 
-              <span>Saat 20:00</span>
-            </div>
-            <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-3xl border-r border-white/40">2</div>
-              <div class="text-center flex-1 px-2 overflow-hidden flex-shrink">
-                <p id="team-name" class="whitespace-nowrap pr-0">
-                  LEGENDARY JACOP - KARA KAPLANLAR
-                </P>
-              </div>
-              <div class="px-4 py-2 text-3xl border-l border-white/40">1</div>
-            </div>
-            <script>
-                function fitText(id) {
-                  const el = document.getElementById(id);
-                  const parentWidth = el.parentElement.offsetWidth;
-                  let fontSize = 24; // Başlangıç boyutu px
-                  el.style.fontSize = fontSize + "px";
+        <!-- Tablo -->
+        <div class="w-full md:text-lg text-[0.8rem] sm:text-base text-white mt-2 relative overflow-x-auto">
+          <table class="min-w-full table-fixed border-collapse">
+            <!-- Başlık satırı -->
+            <thead>
+              <tr class="border-b border-white/40">
+                <th class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"></th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  O
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  G
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  M
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Set
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Sayı
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px] text-xl">
+                  Puan
+                </th>
+              </tr>
+            </thead>
 
-                  while (el.scrollWidth > parentWidth - 4 && fontSize > 8) {
-                    fontSize--;
-                    el.style.fontSize = fontSize + "px";
-                  }
-                }
+            <!-- Takım satırları -->
+            <tbody>
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
 
-                fitText("team-name");
-                window.addEventListener("resize", () => fitText("team-name"));
-            </script>
-            <div class="w-full text-center font-thin flex justify-center gap-4">
-              <span>1.Set:0-0</span>
-              <span>2.Set:0-0</span>
-              <span>3.Set:0-0</span> 
-            </div>
-          </div>
-          <div
-            class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2"
-          >
-            <div class="w-full text-center text-white font-thin flex justify-center gap-4">
-              <span>27 Temmuz Pazar</span> 
-              <span>Saat 20:00</span>
-            </div>
-            <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-2xl border-r border-white/40">0</div>
-              <div class="text-center">
-                <p>A3 - A4</p>
-              </div>
-              <div class="px-4 py-2 text-2xl border-l border-white/40">0</div>
-            </div>
-            <div class="w-full text-center font-thin flex justify-center gap-4">
-              <span>1.Set:0-0</span>
-              <span>2.Set:0-0</span>
-              <span>3.Set:0-0</span> 
-            </div>
-          </div>
-          <div
-            class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2"
-          >
-            <div class="w-full text-center text-white font-thin flex justify-center gap-4">
-              <span>27 Temmuz Pazar</span> 
-              <span>Saat 20:00</span>
-            </div>
-            <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-2xl border-r border-white/40">0</div>
-              <div class="text-center">
-                <p>A1 - A3</p>
-              </div>
-              <div class="px-4 py-2 text-2xl border-l border-white/40">0</div>
-            </div>
-            <div class="w-full text-center font-thin flex justify-center gap-4">
-              <span>1.Set:0-0</span>
-              <span>2.Set:0-0</span>
-              <span>3.Set:0-0</span> 
-            </div>
-          </div>
-            <div
-            class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2"
-          >
-            <div class="w-full text-center text-white font-thin flex justify-center gap-4">
-              <span>27 Temmuz Pazar</span> 
-              <span>Saat 20:00</span>
-            </div>
-            <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-2xl border-r border-white/40">0</div>
-              <div class="text-center">
-                <p>A2 - A4</p>
-              </div>
-              <div class="px-4 py-2 text-2xl border-l border-white/40">0</div>
-            </div>
-            <div class="w-full text-center font-thin flex justify-center gap-4">
-              <span>1.Set:0-0</span>
-              <span>2.Set:0-0</span>
-              <span>3.Set:0-0</span> 
-            </div>
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  A1
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  A2
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  A3
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  A4
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px] font-bold">0</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-          <div
-            class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2"
-          >
-            <div class="w-full text-center text-white font-thin flex justify-center gap-4">
-              <span>27 Temmuz Pazar</span> 
-              <span>Saat 20:00</span>
-            </div>
-            <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-2xl border-r border-white/40">0</div>
-              <div class="text-center">
-                <p>A1 - A4</p>
-              </div>
-              <div class="px-4 py-2 text-2xl border-l border-white/40">0</div>
-            </div>
-            <div class="w-full text-center font-thin flex justify-center gap-4">
-              <span>1.Set:0-0</span>
-              <span>2.Set:0-0</span>
-              <span>3.Set:0-0</span> 
-            </div>
+
+        <!-- Alt açıklama -->
+        <div class="mt-4 text-xs text-white/70 text-center">
+          2-0: Kazanan 3, Kaybeden 0 puan &nbsp; | &nbsp; 2-1: Kazanan 2,
+          Kaybeden 1 puan
+        </div>
       </div>
-        <div
-            class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2"
-          >
-            <div class="w-full text-center text-white font-thin flex justify-center gap-4">
-              <span>27 Temmuz Pazar</span> 
-              <span>Saat 20:00</span>
+
+      <div class="w-full grid lg:grid-cols-2 grid-cols-1 my-4 gap-x-11 gap-y-4">
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                A1-A2
+              </P>
             </div>
-            <div class="w-full flex items-center justify-between my-2">
-              <div class="px-4 py-2 text-2xl border-r border-white/40">0</div>
-              <div class="text-center">
-                <p>A2 - A3</p>
-              </div>
-              <div class="px-4 py-2 text-2xl border-l border-white/40">0</div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                A3-A4
+              </P>
             </div>
-            <div class="w-full text-center font-thin flex justify-center gap-4">
-              <span>1.Set:0-0</span>
-              <span>2.Set:0-0</span>
-              <span>3.Set:0-0</span> 
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                A1-A3
+              </P>
             </div>
-    </main>
-    <div
-      class="text-white text-center mb-4 flex items-center justify-center gap-x-2 relative z-20"
-    >
-      <img
-        src="./assets/insta.svg"
-        class="w-6"
-        alt="instagram-logo"
-        title="instagram logo"
-      />
-      <a
-        href="https://instagram.com/aknehir_yaz_oyunlari"
-        target="_blank"
-        title="instagram adresi"
-        alt="instagram adresi"
-      >
-        <p>aknehir_yaz_oyunlari</p>
-      </a>
-    </div>
-  </body>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                A2-A4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                A1-A4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                A2-A3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+
+  </main>
+  <main class="min-h-screen flex flex-col items-center px-4">
+    <div class="relative w-full max-w-3xl overflow-x-auto">
+      <!-- Cam kutu -->
+      <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative">
+        <!-- Grup ismi -->
+        <div class="absolute top-0 px-4 py-6 text-white font-bold text-2xl">
+          B GRUBU
+        </div>
+
+        <!-- Tablo -->
+        <div class="w-full md:text-lg text-[0.8rem] sm:text-base text-white mt-2 relative overflow-x-auto">
+          <table class="min-w-full table-fixed border-collapse">
+            <!-- Başlık satırı -->
+            <thead>
+              <tr class="border-b border-white/40">
+                <th class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"></th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  O
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  G
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  M
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Set
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Sayı
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px] text-xl">
+                  Puan
+                </th>
+              </tr>
+            </thead>
+
+            <!-- Takım satırları -->
+            <tbody>
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  B1
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  B2
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  B3
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  B4
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px] font-bold">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Alt açıklama -->
+        <div class="mt-4 text-xs text-white/70 text-center">
+          2-0: Kazanan 3, Kaybeden 0 puan &nbsp; | &nbsp; 2-1: Kazanan 2,
+          Kaybeden 1 puan
+        </div>
+      </div>
+
+      <div class="w-full grid lg:grid-cols-2 grid-cols-1 my-4 gap-x-11 gap-y-4">
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                B1-B2
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                B3-B4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                B1-B3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                B2-B4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                B1-B4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                B2-B3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+
+  </main>
+  <main class="min-h-screen flex flex-col items-center px-4">
+    <div class="relative w-full max-w-3xl overflow-x-auto">
+      <!-- Cam kutu -->
+      <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative">
+        <!-- Grup ismi -->
+        <div class="absolute top-0 px-4 py-6 text-white font-bold text-2xl">
+          C GRUBU
+        </div>
+
+        <!-- Tablo -->
+        <div class="w-full md:text-lg text-[0.8rem] sm:text-base text-white mt-2 relative overflow-x-auto">
+          <table class="min-w-full table-fixed border-collapse">
+            <!-- Başlık satırı -->
+            <thead>
+              <tr class="border-b border-white/40">
+                <th class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"></th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  O
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  G
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  M
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Set
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Sayı
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px] text-xl">
+                  Puan
+                </th>
+              </tr>
+            </thead>
+
+            <!-- Takım satırları -->
+            <tbody>
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  C1
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  C2
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  C3
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  C4
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px] font-bold">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Alt açıklama -->
+        <div class="mt-4 text-xs text-white/70 text-center">
+          2-0: Kazanan 3, Kaybeden 0 puan &nbsp; | &nbsp; 2-1: Kazanan 2,
+          Kaybeden 1 puan
+        </div>
+      </div>
+
+      <div class="w-full grid lg:grid-cols-2 grid-cols-1 my-4 gap-x-11 gap-y-4">
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                C1-C2
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                C3-C4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                C1-C3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                C2-C4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                C1-C4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                C2-C3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+
+  </main>
+  <main class="min-h-screen flex flex-col items-center px-4">
+    <div class="relative w-full max-w-3xl overflow-x-auto">
+      <!-- Cam kutu -->
+      <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg p-6 pt-12 relative">
+        <!-- Grup ismi -->
+        <div class="absolute top-0 px-4 py-6 text-white font-bold text-2xl">
+          D GRUBU
+        </div>
+
+        <!-- Tablo -->
+        <div class="w-full md:text-lg text-[0.8rem] sm:text-base text-white mt-2 relative overflow-x-auto">
+          <table class="min-w-full table-fixed border-collapse">
+            <!-- Başlık satırı -->
+            <thead>
+              <tr class="border-b border-white/40">
+                <th class="text-left px-4 py-1 font-semibold w-[45%] min-w-[200px]"></th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  O
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  G
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[8%] min-w-[40px] text-xl">
+                  M
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Set
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[10%] min-w-[60px] text-xl">
+                  Sayı
+                </th>
+                <th class="text-center px-2 py-1 font-semibold w-[11%] min-w-[50px] text-xl">
+                  Puan
+                </th>
+              </tr>
+            </thead>
+
+            <!-- Takım satırları -->
+            <tbody>
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  D1
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr class="bg-gradient-to-r from-[#1724A1]/100 via-[#1724A1]/20 to-[#1724A1]/100 rounded-md">
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px] rounded-l-md">
+                  D2
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold rounded-r-md">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  D3
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px] font-bold">
+                  0
+                </td>
+              </tr>
+
+              <!-- Boşluk satırı -->
+              <tr>
+                <td colspan="7" class="py-1"></td>
+              </tr>
+
+              <tr>
+                <td class="font-semibold whitespace-nowrap px-4 py-1 w-[45%] min-w-[200px]">
+                  D4
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px]">0</td>
+                <td class="text-center px-2 py-1 w-[10%] min-w-[60px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[11%] min-w-[50px]">
+                  0-0
+                </td>
+                <td class="text-center px-2 py-1 w-[8%] min-w-[40px] font-bold">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Alt açıklama -->
+        <div class="mt-4 text-xs text-white/70 text-center">
+          2-0: Kazanan 3, Kaybeden 0 puan &nbsp; | &nbsp; 2-1: Kazanan 2,
+          Kaybeden 1 puan
+        </div>
+      </div>
+
+      <div class="w-full grid lg:grid-cols-2 grid-cols-1 my-4 gap-x-11 gap-y-4">
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                D1-D2
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                D3-D4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                D1-D3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                D2-D4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                D1-D4
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+        <div class="backdrop-blur-lg bg-zinc-950/70 rounded-lg shadow-lg relative text-white p-2">
+          <div class="w-full text-center text-white font-thin flex justify-center gap-4">
+            <span>27 Temmuz Pazar</span>
+            <span>Saat 20:00</span>
+          </div>
+          <div class="w-full flex items-center justify-between my-2">
+            <div class="px-4 py-2 text-3xl border-r border-white/40">0</div>
+            <div class="text-center flex-1 px-1 overflow-hidden flex-shrink">
+              <p class="whitespace-nowrap pr-0 team-name">
+                D2-D3
+              </P>
+            </div>
+            <div class="px-4 py-2 text-3xl border-l border-white/40">0</div>
+          </div>
+          <div class="w-full text-center font-thin flex justify-center gap-4">
+            <span>1.Set:0-0</span>
+            <span>2.Set:0-0</span>
+            <span>3.Set:0-0</span>
+          </div>
+        </div>
+
+  </main>
+  <div class="text-white text-center mb-4 flex items-center justify-center gap-x-2 relative z-20">
+    <img src="./assets/insta.svg" class="w-6" alt="instagram-logo" title="instagram logo" />
+    <a href="https://instagram.com/aknehir_yaz_oyunlari" target="_blank" title="instagram adresi"
+      alt="instagram adresi">
+      <p>aknehir_yaz_oyunlari</p>
+    </a>
+  </div>
+  <script>
+    function fitText(id) {
+      const el = document.getElementsByClassName(id);
+
+      for (let index = 0; index < el.length; index++) {
+        const element = el[index];
+        const parentWidth = element.parentElement.offsetWidth;
+        let fontSize = 24; // Başlangıç boyutu px
+        element.style.fontSize = fontSize + "px";
+
+        while (element.scrollWidth > parentWidth - 4 && fontSize > 8) {
+          fontSize--;
+          element.style.fontSize = fontSize + "px";
+        }
+      }
+    }
+
+    fitText("team-name");
+    window.addEventListener("resize", () => fitText("team-name"));
+  </script>
+</body>
+
 </html>
