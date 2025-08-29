@@ -28,14 +28,16 @@
     }
     
     .logo {
-      width: 40%;    
-      max-width: 300px;  
+      width: 20%;    
+      max-width: 200px;
+      min-width: 150px;  
       height: auto;
     }
 
     .baslik {
       width: 70%;
       max-width: 500px;
+      min-width: 300px;
       height: auto;
     }
 
@@ -47,9 +49,12 @@
 <body class="bg-gray-900 min-h-screen unsal bg-cover bg-center bg-no-repeat">
   <div class="w-full flex flex-col items-center pt-8">
     <img src="./assets/logo.svg" alt="logo" class="logo mb-4">
-    <img src="./assets/baslik.svg" alt="baslik" class="baslik">
-    
-    
+      <div class="text-white font-bold 
+              text-xl sm:text-2xl md:text-4xl 
+              max-w-[90%] sm:max-w-[600px] md:max-w-[800px] 
+              text-center break-words leading-snug mt-4 mb-4">
+    PLAJ VOLEYBOLU GRUPLARI VE MAÇ TAKVİMİ
+   </div>
   </div>
 
   
@@ -1102,7 +1107,7 @@
         </div>
 
   </main>
-  <div class="text-white text-center mb-4 flex items-center justify-center gap-x-2 relative z-20">
+  <div class="text-white text-center mb-10 mt-6 flex items-center justify-center gap-x-2 relative z-20">
     <img src="./assets/insta.svg" class="w-6" alt="instagram-logo" title="instagram logo" />
     <a href="https://instagram.com/aknehir_yaz_oyunlari" target="_blank" title="instagram adresi"
       alt="instagram adresi">
